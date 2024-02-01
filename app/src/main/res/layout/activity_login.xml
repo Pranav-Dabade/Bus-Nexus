@@ -26,14 +26,15 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/gle_Btn_login"
-        android:layout_width="45dp"
-        android:layout_height="44dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
 
         android:layout_marginEnd="48dp"
 
 
         android:background="@drawable/google"
         android:backgroundTint="@color/black"
+        android:contentDescription="@string/app_name"
         android:fontFamily="sans-serif-condensed"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -45,14 +46,15 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/phone_Btn_login"
-        android:layout_width="45dp"
-        android:layout_height="44dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
 
         android:layout_marginBottom="104dp"
         android:background="@drawable/phone"
 
 
         android:backgroundTint="@color/black"
+        android:contentDescription="@string/app_name"
         android:fontFamily="sans-serif-condensed"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -84,33 +86,33 @@
         tools:ignore="MissingConstraints" />
 
     <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
-<!--        android:id="@+id/Login_DropDown"-->
-<!--        android:layout_width="326dp"-->
-<!--        android:layout_height="91dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.494"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteY="240dp">-->
+    <!--        android:id="@+id/Login_DropDown"-->
+    <!--        android:layout_width="326dp"-->
+    <!--        android:layout_height="91dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.494"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        tools:layout_editor_absoluteY="240dp">-->
 
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/textInputLayout"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="16dp"-->
-<!--            android:hint="@string/select"-->
-<!--            android:textColorHint="@color/black"-->
-<!--            app:hintTextColor="@color/black">-->
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:id="@+id/textInputLayout"-->
+    <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="16dp"-->
+    <!--            android:hint="@string/select"-->
+    <!--            android:textColorHint="@color/black"-->
+    <!--            app:hintTextColor="@color/black">-->
 
-<!--            <AutoCompleteTextView-->
-<!--                android:id="@+id/auto_complete_txt"-->
-<!--                android:layout_width="290dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@drawable/textboxborder"-->
-<!--                android:inputType="none" />-->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+    <!--            <AutoCompleteTextView-->
+    <!--                android:id="@+id/auto_complete_txt"-->
+    <!--                android:layout_width="290dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/textboxborder"-->
+    <!--                android:inputType="none" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+    <!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
 
     <!--    Password Enter Box-->
@@ -172,7 +174,7 @@
         tools:ignore="MissingConstraints" />
 
 
-<!--Forgot password text-->
+    <!--Forgot password text-->
 
 
     <!--        Registrastion Button-->
