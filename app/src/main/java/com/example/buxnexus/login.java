@@ -78,10 +78,29 @@ public class login extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (enrolment.getText().toString().equals("2109680069") && password.getText().toString().equals("1234")) {
+                if (enrolment.getText().toString().equals("2109680069") && password.getText().toString().equals("Soham1234")) {
                     Intent intent = new Intent(login.this, HomePage.class);
                     startActivity(intent);
-                } else {
+                }
+
+
+                else if (enrolment.getText().toString().equals("2109680099") && password.getText().toString().equals("Adnan1234")) {
+                    Intent intent = new Intent(login.this, HomePage.class);
+                    startActivity(intent);
+                }
+                else if (enrolment.getText().toString().equals("2109680073") && password.getText().toString().equals("Pranav1234")) {
+                    Intent intent = new Intent(login.this, HomePage.class);
+                    startActivity(intent);
+                }
+                else if (enrolment.getText().toString().equals("2109680097") && password.getText().toString().equals("Karan1234")) {
+                    Intent intent = new Intent(login.this, HomePage.class);
+                    startActivity(intent);
+                }
+                else if (enrolment.getText().toString().equals("2109680043") && password.getText().toString().equals("Atharv1234")) {
+                    Intent intent = new Intent(login.this, HomePage.class);
+                    startActivity(intent);
+                }
+                else {
                     Toast.makeText(login.this, "Please Enter Correct Enrollment No. or Password", Toast.LENGTH_SHORT).show();
                 }
             }
