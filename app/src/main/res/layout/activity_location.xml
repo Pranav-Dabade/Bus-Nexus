@@ -3,24 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".Location">
+    android:background="@drawable/backcolor"
+    tools:context=".HomePage">
+
+
+    <!--    Registration Text-->
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="200dp"
         android:layout_height="48dp"
 
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:singleLine="true"
         android:text="Bus Nexus"
         android:textColor="#F44336"
 
         android:textSize="33dp"
+
         app:fontFamily="@font/robot900"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -29,29 +36,50 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-medium"
-        android:text="LOCATION"
+        android:text="Location"
         android:textColor="@color/black"
-
         android:textSize="18dp"
+
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <!--    <com.google.android.gms.maps.MapView-->
+    <!--        android:id="@+id/mapView"-->
+    <!--        android:layout_width="360dp"-->
+    <!--        android:layout_height="680dp"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        tools:layout_editor_absoluteX="26dp"-->
+    <!--        tools:layout_editor_absoluteY="177dp" />-->
 
-        android:id="@+id/location_Back_Btn"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <Button
 
+        android:id="@+id/Location_Back_Btn1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:background="@drawable/back"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/maps"
+        android:layout_width="411dp"
+        android:layout_height="717dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986">
+        <!--        android:name="com.google.android.gms.maps.SupportMapFragment">-->
+    </androidx.fragment.app.FragmentContainerView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
