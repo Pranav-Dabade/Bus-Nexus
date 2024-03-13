@@ -1,10 +1,12 @@
 package com.example.buxnexus;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -15,7 +17,8 @@ public class user_info extends AppCompatActivity {
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
     TextView name,email,mob;
-    @SuppressLint("MissingInflatedId")
+    AppCompatButton btn;
+//    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,17 +28,27 @@ public class user_info extends AppCompatActivity {
         name = findViewById(R.id.user_name);
         mob = findViewById(R.id.user_no);
         email = findViewById(R.id.user_email);
+        btn = findViewById(R.id.User_Detail_Home_Btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(user_info.this, HomePage.class);
+                startActivity(intent);
+            }
+        });
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if(acct != null)
         {
             String personName = acct.getDisplayName();
             String personEmail = acct.getEmail();
-            String personNo = acct.getId();
+            String personNo = "9172807097";
+
             name.setText(personName);
             email.setText(personEmail);
             mob.setText(personNo);
         }
 
     }
+
 }
