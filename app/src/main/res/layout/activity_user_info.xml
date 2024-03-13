@@ -21,16 +21,16 @@
         android:text="Email :"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/Bus_detail_Driver_name"
-        app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Driver_name"
+        app:layout_constraintBottom_toTopOf="@+id/user_email"
+        app:layout_constraintEnd_toEndOf="@+id/user_email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Bus_detail_Driver_name"
-        app:layout_constraintTop_toBottomOf="@+id/Bus_detail_Bus_no"
+        app:layout_constraintStart_toStartOf="@+id/user_email"
+        app:layout_constraintTop_toBottomOf="@+id/user_no"
         app:layout_constraintVertical_bias="0.808"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Bus_Detail_Home_Btn"
+        android:id="@+id/User_Detail_Home_Btn"
         android:layout_width="131dp"
         android:layout_height="51dp"
         android:layout_marginTop="88dp"
@@ -40,10 +40,10 @@
         android:text="Home"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Driver_No"
+        app:layout_constraintEnd_toEndOf="@+id/user_enroll"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/Bus_detail_Driver_No"
-        app:layout_constraintTop_toBottomOf="@+id/Bus_detail_Driver_No"
+        app:layout_constraintStart_toStartOf="@+id/user_enroll"
+        app:layout_constraintTop_toBottomOf="@+id/user_enroll"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -84,11 +84,12 @@
     <androidx.appcompat.widget.AppCompatButton
 
         android:id="@+id/Bus_Detail_Back_Btn"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="28dp"
 
         android:background="@drawable/back"
+        android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,14 +103,14 @@
         android:text="Name :"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/Bus_detail_Route"
-        app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Route"
+        app:layout_constraintBottom_toTopOf="@+id/user_name"
+        app:layout_constraintEnd_toEndOf="@+id/user_name"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Bus_detail_Route"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/Bus_detail_Route"
+        android:id="@+id/user_name"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="92dp"
@@ -134,16 +135,16 @@
         android:text="Mobile No :"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/Bus_detail_Bus_no"
-        app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Bus_no"
+        app:layout_constraintBottom_toTopOf="@+id/user_no"
+        app:layout_constraintEnd_toEndOf="@+id/user_no"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Bus_detail_Bus_no"
-        app:layout_constraintTop_toBottomOf="@+id/Bus_detail_Route"
+        app:layout_constraintStart_toStartOf="@+id/user_no"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/Bus_detail_Bus_no"
+        android:id="@+id/user_no"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="52dp"
@@ -155,10 +156,10 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Route"
+        app:layout_constraintEnd_toEndOf="@+id/user_name"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Bus_detail_Route"
-        app:layout_constraintTop_toBottomOf="@+id/Bus_detail_Route"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -168,16 +169,16 @@
 
         android:textSize="22sp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/Bus_detail_Driver_No"
-        app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Driver_No"
+        app:layout_constraintBottom_toTopOf="@+id/user_enroll"
+        app:layout_constraintEnd_toEndOf="@+id/user_enroll"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Bus_detail_Driver_No"
-        app:layout_constraintTop_toBottomOf="@+id/Bus_detail_Driver_name"
+        app:layout_constraintStart_toStartOf="@+id/user_enroll"
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
         app:layout_constraintVertical_bias="0.657"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/Bus_detail_Driver_name"
+        android:id="@+id/user_email"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="52dp"
@@ -193,11 +194,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Bus_detail_Bus_no"
+        app:layout_constraintTop_toBottomOf="@+id/user_no"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/Bus_detail_Driver_No"
+        android:id="@+id/user_enroll"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="52dp"
@@ -209,10 +210,10 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Driver_name"
+        app:layout_constraintEnd_toEndOf="@+id/user_email"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/Bus_detail_Driver_name"
-        app:layout_constraintTop_toBottomOf="@+id/Bus_detail_Driver_name"
+        app:layout_constraintStart_toStartOf="@+id/user_email"
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
