@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.buxnexus">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,68 +14,64 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BuxNexus"
-        tools:targetApi="31"
-
-        >
+        tools:targetApi="31">
+        <activity
+            android:name=".payment"
+            android:exported="false" />
         <activity
             android:name=".Pass_validity"
             android:exported="false">
 
-
-
         </activity>
-
         <activity
             android:name=".bus_detail"
             android:exported="false">
 
         </activity>
-
-
         <activity
-            android:name=".location"
-            android:exported="false" >
+            android:name=".Location"
+            android:exported="false">
 
         </activity>
         <activity
             android:name=".new_pass"
             android:exported="false">
 
-
         </activity>
-
         <activity
             android:name=".custome_list_view"
             android:exported="false" />
         <activity
             android:name=".HomePage"
-            android:exported="true" >
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
-        <activity
-            android:name=".login"
-            android:exported="false" />
         <activity
             android:name=".registration"
             android:exported="false">
 
         </activity>
-
-
-
         <activity
             android:name=".MainActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".user_info"
+            android:exported="false" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
     </application>
 
 </manifest>
