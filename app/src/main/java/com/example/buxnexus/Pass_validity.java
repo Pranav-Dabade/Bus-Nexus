@@ -37,7 +37,7 @@ public class Pass_validity extends AppCompatActivity {
         btnRenew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Pass_validity.this,HomePage.class);
+                Intent intent=new Intent(Pass_validity.this,new_pass.class);
                 startActivity(intent);
             }
         });
