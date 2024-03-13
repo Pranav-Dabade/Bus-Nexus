@@ -20,7 +20,7 @@
 
         android:text="Driver Name :"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/Bus_detail_Driver_name"
         app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Driver_name"
         app:layout_constraintHorizontal_bias="0.0"
@@ -101,7 +101,7 @@
         android:layout_marginBottom="8dp"
         android:text="Route :"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/Bus_detail_Route"
         app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Route"
         app:layout_constraintHorizontal_bias="0.0"
@@ -110,8 +110,8 @@
 
     <EditText
         android:id="@+id/Bus_detail_Route"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
         android:layout_marginTop="92dp"
         android:background="@drawable/textboxborder"
         android:hint="Route Display"
@@ -133,7 +133,7 @@
         android:layout_marginBottom="8dp"
         android:text="Bus Number :"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/Bus_detail_Bus_no"
         app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Bus_no"
         app:layout_constraintHorizontal_bias="0.0"
@@ -144,8 +144,8 @@
 
     <EditText
         android:id="@+id/Bus_detail_Bus_no"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/textboxborder"
         android:hint="Bus Number Display"
@@ -166,7 +166,7 @@
         android:layout_height="wrap_content"
         android:text="Driver Number :"
 
-        android:textSize="22sp"
+        android:textSize="19sp"
 android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/Bus_detail_Driver_No"
         app:layout_constraintEnd_toEndOf="@+id/Bus_detail_Driver_No"
@@ -178,8 +178,8 @@ android:textColor="@color/black"
 
     <EditText
         android:id="@+id/Bus_detail_Driver_name"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/textboxborder"
         android:hint="Driver Name Display"
@@ -198,8 +198,8 @@ android:textColor="@color/black"
 
     <EditText
         android:id="@+id/Bus_detail_Driver_No"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/textboxborder"
         android:hint="Driver Number Display"
