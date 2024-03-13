@@ -13,7 +13,6 @@
         android:id="@+id/Pass_Validity_Home_Btn"
         android:layout_width="131dp"
         android:layout_height="51dp"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/textboxborder"
         android:backgroundTint="@color/black"
@@ -37,10 +36,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/Pass_Validity_Home_Btn"
         app:layout_constraintEnd_toEndOf="@+id/Pass_Validity_Bus_No"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/Pass_Validity_Home_Btn"
-        app:layout_constraintTop_toBottomOf="@+id/Pass_Validity_Bus_No"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toTopOf="@+id/Pass_Validity_Home_Btn"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -101,7 +98,7 @@
         android:text="Name :"
         android:textColor="@color/black"
 
-        android:textSize="22sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/Login_ID_NO"
         app:layout_constraintEnd_toEndOf="@+id/Login_ID_NO"
         app:layout_constraintHorizontal_bias="0.0"
@@ -115,7 +112,7 @@
 
         android:textColor="@color/black"
 
-        android:textSize="22sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/Pass_Validity_from"
         app:layout_constraintEnd_toEndOf="@+id/Pass_Validity_from"
         app:layout_constraintHorizontal_bias="0.0"
@@ -125,9 +122,9 @@
 
     <EditText
         android:id="@+id/Pass_Validity_from"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/textboxborder"
         android:hint="Valid from"
         android:inputType="number"
@@ -145,8 +142,8 @@
 
     <EditText
         android:id="@+id/Login_ID_NO"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/textboxborder"
         android:hint="Student Name Display"
@@ -169,7 +166,7 @@
 
         android:textColor="@color/black"
 
-        android:textSize="22sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/Pass_Validity_until"
         app:layout_constraintEnd_toEndOf="@+id/Pass_Validity_until"
         app:layout_constraintHorizontal_bias="0.0"
@@ -178,9 +175,9 @@
 
     <EditText
         android:id="@+id/Pass_Validity_until"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/textboxborder"
         android:hint="Valid Until"
         android:inputType="number"
@@ -212,9 +209,9 @@
 
     <EditText
         android:id="@+id/Pass_Validity_route"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/textboxborder"
         android:hint="Route Display"
         android:inputType="number"
@@ -235,7 +232,7 @@
         android:text="Bus No. :"
 
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toTopOf="@+id/Pass_Validity_Bus_No"
         app:layout_constraintEnd_toEndOf="@+id/Pass_Validity_Bus_No"
         app:layout_constraintHorizontal_bias="0.0"
@@ -244,8 +241,8 @@
 
     <EditText
         android:id="@+id/Pass_Validity_Bus_No"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
         android:layout_marginTop="56dp"
         android:background="@drawable/textboxborder"
         android:hint="Bus Number Display"
